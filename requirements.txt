@@ -1,0 +1,4 @@
+Scrapy==2.8.0
+scrapy-splash==0.8.0
+pandas==2.0.0
+bs4==0.0.1
