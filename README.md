@@ -14,7 +14,8 @@ We provide the web crawler from [Business Today](https://esg.businesstoday.com.t
 - Bs4 0.0.1
 
 ## Dataset 
-- There are five columns in our DynamicESG dataset, following is the example format of one instance.
+- There are five columns in our DynamicESG dataset, including URL, headline, and the annotations of three tasks of the news articles.
+
 
 - The labels of three tasks is as follows:
     
@@ -22,6 +23,7 @@ We provide the web crawler from [Business Today](https://esg.businesstoday.com.t
     2. **Impact Duration**: *<2*, *2~5*, *>5*, *NotRelatedtoCompany*, *NotRelatedtoESGTopic*
     3. **ESG Category**: Index of 44 Key Issues in the [Guideline](https://github.com/ymntseng/DynamicESG/blob/master/Guideline%20of%20ESG%2044%20key%20Issues.pdf), ex. E01, S13, G07.
 
+- Here is an example format of one instance.
 
 ```jsonld
 {
