@@ -44,10 +44,11 @@ We provide the web crawler from [Business Today](https://esg.businesstoday.com.t
 pip install -r requirements.txt
 ```
 
-- Then, you can easily output the result into json or csv files as follows. The output will have two new columns along with the origin columns in DynamicESG dataset and the data shape will be (2220, 7). 
+- Then, you can easily output the result into json or csv files as follows. The output will have three new columns along with the origin columns in DynamicESG dataset and the data shape will be (2220, 8). 
 
     - news_content：clean news content
     - news_content_html：origin HTML tags of news content
+    - news_hashtags：named entity annotated by journalists that are displayed under each news article
 
 ```bash
 scrapy crawl business_today -o {output.csv}

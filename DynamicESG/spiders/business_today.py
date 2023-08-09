@@ -9,7 +9,6 @@ class BusinessTodaySpider(scrapy.Spider):
     start_urls = ['http://esg.businesstoday.com.tw/catalog/180686/']
 
     def __init__(self):
-        # args: dataset = 'Train' or 'Dev'
         self.data = pd.read_json(f'DynamicESG_dataset.json')
 
     def parse(self, response):
@@ -23,6 +22,7 @@ class BusinessTodaySpider(scrapy.Spider):
         news_url = response.request.url
         news_content_html = response.xpath("//div[@class='cke_editable font__select-content']/div").getall()
         news_content = self.clean_data(news_content_html[0])
+        news_hashtags = response.xpath("/html/body/section/div/div[3]/ul[1]/li/a/text()").getall()
 
         idx = self.data[self.data.URL == news_url].index[0]
 
@@ -33,7 +33,8 @@ class BusinessTodaySpider(scrapy.Spider):
             "Impact_Duration": list(self.data.Impact_Duration[idx]),
             "ESG_Category": list(self.data.ESG_Category[idx]),
             "news_content_html": news_content_html,
-            "news_content": news_content
+            "news_content": news_content,
+            "news_hashtags": news_hashtags
         }
 
         yield EsgCrawlerItem

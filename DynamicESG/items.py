@@ -14,4 +14,5 @@ class EsgCrawlerItem(scrapy.Item):
 
     # new add by crawler
     news_content_html = scrapy.Field()
-    news_content = scrapy.Field()        
+    news_content = scrapy.Field()
+    news_hashtags = scrapy.Field()
