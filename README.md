@@ -21,7 +21,7 @@ We provide the web crawler from [Business Today](https://esg.businesstoday.com.t
     
     1. **Impact Type**: *Opportunity*, *Risk*, *CannotDistinguish*, *NotRelatedtoCompany*, *NotRelatedtoESGTopic*
     2. **Impact Duration**: *<2*, *2~5*, *>5*, *NotRelatedtoCompany*, *NotRelatedtoESGTopic*
-    3. **ESG Category**: Index of 44 Key Issues in the [Guideline](https://github.com/ymntseng/DynamicESG/blob/master/Guideline%20of%20ESG%2044%20key%20Issues.pdf), ex. E01, S13, G07.
+    3. **ESG Category**: Index of 44 Key Issues in the [Guideline](https://github.com/ymntseng/DynamicESG/blob/master/Guideline%20of%20ESG%2044%20key%20issues.pdf), ex. E01, S13, G07.
 
 - Here is an example format of one instance.
 
