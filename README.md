@@ -71,7 +71,7 @@ pip install -r requirements.txt
     - news_content_html：origin HTML tags of news content
     - news_hashtags：named entity annotated by journalists that are displayed under each news article
 
-```bash
+```
 scrapy crawl business_today -a dataset=<dataset-name> -o <output-name.json>
 
 # e.g.,
