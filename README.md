@@ -92,6 +92,12 @@ Please refer to FinNLP@IJCNLP-AACL-2023 website for more details.
 [FinNLP@IJCNLP-AACL-2023] Shared Task: Multi-Lingual ESG Impact Type Identification (ML-ESG-2)：https://sites.google.com/nlg.csie.ntu.edu.tw/finnlp2023/home
 
 
+### ML_ESG-3
+Please refer to FinNLP-KDF@LREC-COLING-2024 website for more details.
+
+[FinNLP-KDF@LREC-COLING-2024] Shared Task: Multi-Lingual ESG Impact Duration Inference (ML-ESG-3)：https://sites.google.com/nlg.csie.ntu.edu.tw/finnlp-kdf-2024/home
+
+
 ## Citation
 If you use DynamicESG dataset or the code from this repo, please kindly cite:
 ```
